@@ -1,0 +1,110 @@
+* {
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+body{
+	background-image: url('https://avatars.mds.yandex.net/i?id=5d4b5b3b74ed095625a4a116e165830f_l-4493789-images-thumbs&n=13');
+}
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 10%;
+	background:transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+.logo{
+	font-size: 25px;
+	color: blue;
+	text-decoration: none;
+	font-weight: 600;
+	cursor: default;
+	
+}
+
+.navbar a {
+	font-size: 18px;
+	color: blue;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 35px;
+	transition: .3s;
+	
+	
+
+}
+
+.navbar a:hover{
+	color: black;
+}
+.page{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 70px 10% 0;
+}
+.pic img {
+	max-width: 450px;
+}
+
+.page-conten{
+	max-width: 600px;
+
+}
+
+
+.title{
+	font-size: 50px;
+	color: blue;
+
+}
+
+.text{
+	font-size: 25px;
+	margin-left: 15px;
+	color: blue;
+	animation: slideRight 1s ease forwards;
+}
+
+.call{
+    font-size: 18px;
+	color: blue;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 35px;
+	transition: .3s;
+}
+
+@keyframes slideRight{
+	0%{
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+
+@keyframes slideLeft{
+	0%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+}

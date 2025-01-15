@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+
+
+{% block content %}
+<ul>
+    {% for p in posts %}
+    <li>
+        <h1 class="title">{{p.title}}</h1>
+        <p class="text">{{p.content}}</p>
+
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
